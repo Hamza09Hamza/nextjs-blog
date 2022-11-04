@@ -1,0 +1,162 @@
+.main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.floatings1 {
+    position: absolute;
+    max-width: 200px;
+    margin-top: -350px;
+    margin-left: -400px;
+}
+.floatings2 {
+    position: absolute;
+    max-width: 150px;
+    margin-top: 550px;
+    margin-left: 400px;
+}
+
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    height: 600px;
+    background: rgba( 255, 255, 255, 0.05 );
+    backdrop-filter: blur( 2.5px );
+    -webkit-backdrop-filter: blur( 2.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.card img {
+    width: 160px;
+    margin-top: 20px;
+}
+
+.card input{
+    margin-top: 15px;
+    width: 300px;
+    height: 50px;
+    border-radius: 4px;
+    font-size: 15px;
+    padding: 10px;
+    background: rgba( 255, 255, 255, 0.05 );
+    backdrop-filter: blur( 2.5px );
+    -webkit-backdrop-filter: blur( 2.5px );
+    border: 0px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 300px;
+    height: 50px;
+    border-radius: 4px;
+    font-size: 15px;
+    padding: 10px;
+    background-color: #1671cd;
+    transition: 0.2s;
+}
+
+.btn:hover {
+    background-color: #114a83;
+}
+
+.card input:focus {
+    outline: none;
+}
+
+.line {
+    border-radius: 16px;
+    margin-top: 20px;
+    width: 300px;
+    height: 5px;
+    background-color: white;
+}
+
+.btnsw{
+    display: flex;
+    margin-top: 20px;
+}
+
+.btnw {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px 0 10px;
+    width: 85px;
+    height: 60px;
+    background: rgba( 255, 255, 255, 0.05 );
+    backdrop-filter: blur( 2.5px );
+    -webkit-backdrop-filter: blur( 2.5px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border-radius: 10px;
+}
+
+.btnw img {
+    margin: unset;
+    width: 30px;
+}
+
+@media screen and (max-width: 550px) {
+    
+    .floatings1{
+        overflow-x: hidden;
+    }
+    .floatings2{
+        overflow-x: hidden;
+    }
+    .card {
+        width: 90%;
+    }
+    .floatings1 {
+        max-width: 50%;
+        margin-top: -350px;
+        margin-left: -80%;
+    }
+    .floatings2 {
+        max-width: 50%;
+        margin-top: 550px;
+        margin-left: 70%;
+    }
+}
+
+@media screen and (max-width: 388px) {
+    .card {
+        height: auto;
+    }
+    .card h1{
+        font-size: 25px;
+    }
+    .card img {
+        width: 40%;
+    }
+    .card input {
+        width: 90%;
+    }
+    .btn {
+        width: 90%;
+    }
+    .line {
+        width: 90%;
+    }
+    .btnsw {
+        padding-bottom: 20px;
+    }
+    .btnw {
+        width: 50%;
+        height: unset;
+    }
+    .btnw img {
+        width: 70%;
+        padding: 10px;
+    }
+    
+}
