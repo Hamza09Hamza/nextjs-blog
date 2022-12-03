@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
 import { eventObj } from './SliderFunction'
-import styles from "../styles/Slider.module.css"
+import styles from "./Slider.module.css"
 const Slider = () => {
     const [eventName, setEventName] = useState("stopped")
     const [Array, setArray] = useState(["red", "blue", "green", "yellow", "purple"])
