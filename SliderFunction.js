@@ -1,4 +1,4 @@
-import styles from "../styles/Slider.module.css"
+
 export const eventObj = (eventName, Index) => {
     let styleName = " "
     if (1 == Index) {
