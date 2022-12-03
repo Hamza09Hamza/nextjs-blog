@@ -1,4 +1,4 @@
-    import React from 'react'
+import React from 'react'
 import { useState } from 'react'
 import { eventObj } from '../SliderFunction'
 import styles from "../Slider.module.css"
@@ -23,6 +23,7 @@ export default function Home() {
             setArray(Arr);
         }
     }, 9000)
+    
   return (
     <>
       <div className={styles.divSlider}>
@@ -38,7 +39,6 @@ export default function Home() {
                 </>)
             })
             }
-
         </div>
     </>);
 }
