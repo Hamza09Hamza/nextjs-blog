@@ -1,0 +1,92 @@
+.divSlider {
+    width: 50%;
+    height: 50vh;
+    border: solid red 2px;
+    position: relative;
+    overflow: hidden;
+}
+
+.second {
+    right: -40%;
+}
+
+.first {
+    right: 30%;
+    height: 70% !important;
+    transition: height 0.5s;
+}
+
+.CardHeader {
+    font-size: 1.42rem;
+    font-weight: bold;
+}
+
+
+.UpgradeSecondeToFirst {
+    animation: secondToFirst 8s;
+}
+
+.DowngradeFirstToSecond {
+    animation: firsttoLast 10s;
+}
+
+.UpgradeLasttoSecond {
+    animation: lasttoSeconde 10s;
+}
+
+
+.last {
+    display: none;
+    transition: height 0.5s;
+
+}
+
+.itemSlider {
+    width: 35%;
+    height: 40%;
+    border-radius: 10px;
+    top: 20px;
+    position: absolute;
+}
+
+
+
+@keyframes secondToFirst {
+    0% {
+        right: -40%;
+        height: 40% !important;
+
+
+    }
+
+    100% {
+        right: 30%;
+        height: 70% !important;
+
+    }
+}
+
+@keyframes firsttoLast {
+    0% {
+        right: 30%;
+        display: static;
+    }
+
+    100% {
+        right: 150%;
+        display: none;
+
+    }
+}
+
+@keyframes lasttoSeconde {
+    0% {
+        right: -80%;
+        display: none;
+
+    }
+
+    100% {
+        right: -40%;
+    }
+}
